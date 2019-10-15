@@ -29,7 +29,7 @@ def read_cont ():
 		
 def read_letter ():
 	letter = input ("Enter your letter: ")
-	if (len(letter) == 1) & (letter.isalpha()):
+	if (len(letter) == 1) & (((ord(letter[0])>64) & (ord(letter[0])<91)) | ((ord(letter[0])>96) & (ord(letter[0])<123))):
 		return letter.lower()
 	else:
 		print ("Enter one letter of latin alphabet")
