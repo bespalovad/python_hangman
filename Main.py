@@ -101,4 +101,5 @@ def main ():
 		cycle_flag = read_cont()
 		print ("-------------------------------------")
 
-main() 																	
+if __name__ == "__main__":
+	main() 																	
